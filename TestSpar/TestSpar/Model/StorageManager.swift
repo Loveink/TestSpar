@@ -17,7 +17,7 @@ class StorageManager {
             Product(
                 id: UUID(),
                 name: "Добавка \"Липа\" \nк чаю 200 г",
-                image: Image("ImageProduct"),
+                image: Image("sparLipa"),
                 description: "Флавоноиды липового цвета обладают противовоспалительным действием, способствует укреплению стенки сосудов.",
                 fromCountry: Country(contry: "Испания", town: "Риоха", image: nil),
                 specifications: Specifications(

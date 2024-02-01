@@ -10,16 +10,19 @@ import SwiftUI
 struct MainView: View {
   let storageManager = StorageManager.shared
   let product: Product
-
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  
+  var body: some View {
+    ScrollView(.vertical) {
+      Divider()
+      
+      VStack (alignment: .leading, spacing: 20) {
+        ImageProduct(product: product)
+        InfoAboutProduct(product: product)
+        ReviewsProduct(reviews: product.reviews)
+      }
     }
+    .overlay(PriceProduct(product: product), alignment: .bottom)
+  }
 }
 
 #Preview {

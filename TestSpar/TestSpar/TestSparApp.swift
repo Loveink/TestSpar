@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct TestSparApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+struct TestMySparApp: App {
+  @State private var selectedTab: Tab = .main
+
+  var body: some Scene {
+      WindowGroup {
+        CustomNavigationView()
+      }
+  }
 }
