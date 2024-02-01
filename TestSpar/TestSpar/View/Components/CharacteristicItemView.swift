@@ -22,11 +22,12 @@ struct CharacteristicItemView: View {
       Text(characteristicValue)
         .multilineTextAlignment(.trailing)
         .lineLimit(2)
+        .minimumScaleFactor(0.5)
     }
     .font(.footnote)
   }
 }
 
 #Preview {
-  CharacteristicItemView(characteristicName: "жиры", characteristicValue: "1 гр")
+  CharacteristicItemView(characteristicName: "Производство", characteristicValue: "Россия, Краснодарский край")
 }

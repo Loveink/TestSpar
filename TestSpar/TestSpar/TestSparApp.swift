@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TestMySparApp: App {
+struct TestSparApp: App {
   @State private var selectedTab: Tab = .main
 
   var body: some Scene {
